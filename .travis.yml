@@ -1,8 +1,12 @@
 {
-  "language": "cpp",
-  "os": "linux",
-  "group": "stable",
-  "dist": "trusty",
-  "script": "gcc -o hello-world hello-world.cpp"
+  language: "cpp",
+  os: "linux",
+  group: "stable",
+  dist: "trusty",
+  script: "gcc -o hello-world hello-world.cpp"
+  deploy:
+      provider: releases
+      api_key: "b6d1f263732b9f8dc8b726351c290fad12381a63"
+      file: "hello-world"
+      skip_cleanup: true
 }
-
