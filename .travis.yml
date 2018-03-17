@@ -4,6 +4,7 @@ group: stable
 dist: trusty
 script: gcc -o hello-world hello-world.cpp
 before_deploy:
+ - echo "Will run git add * ...."
  - git add *
  - git commit -m "binary"
 deploy:
