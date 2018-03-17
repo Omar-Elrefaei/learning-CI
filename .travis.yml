@@ -2,6 +2,7 @@
   "language": "cpp",
   "os": "linux",
   "group": "stable",
-  "dist": "trusty"
+  "dist": "trusty",
+  "script": "gcc -o hello-world hello-world.cpp"
 }
 
