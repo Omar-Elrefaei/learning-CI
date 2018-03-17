@@ -1,12 +1,12 @@
----
-"language": "cpp",
-"os": "linux",
-"group": "stable",
-"dist": "trusty",
-"script": "gcc -o hello-world hello-world.cpp"
-"deploy":
-    "provider": "releases"
-    "api_key": "b6d1f263732b9f8dc8b726351c290fad12381a63"
-    "file": "hello-world"
-    "skip_cleanup": true
-
+language: cpp
+os: linux
+group: stable
+dist: trusty
+script: gcc -o hello-world hello-world.cpp
+deploy:
+  provider: releases
+  api_key:
+    secure: Vh5iOiQcYUS0rfGNUrQjDLJznzM+Pi283FKXcfyvAmNuqozLb4wQSO/cFbrOby9tnTwAVo8+1WilKaPg7J8d1wFtrJG6+6cy/Tv0BtLmt0b1RtbMstjpeaR4QvNUfu7mhnOv+3012ZqGYJppsSuSBsei+hz1f/5EKZPYMMOSwHRvv7FeqYf3aeE3Jvc8yJcrRFqM48avkGg5HKPGJTiPpz0E/kmCz44t8oaBUaCF4QbaZhkMUAweiVSZo3hUDOE46/Bk9B+81Fon2xs57yVqzuvsZ/n1qjKFmz/9zaGCvYUlovtZN5ORBadCtuzhZtcF0hAxNfpFEVHDfGCpyzK0zmKlCCXbpg+YSHQuB896y9bDT65Q8M6xC66kShC3z9tmx3R87ii6iH7ZGxD+/VzGPAUID72bhNClRBrjOQiNtf4vgofG04d05xXWe3dKeXEgSXPC5aDdpi0FaBxaNRsDgvFvF/YFqHUlkDGPIkv5JXCHnc36UyqHS3mwKXJDehUQj8woQ3DwJUo0GeD+mLQ4ZLrHiQ34gWlYfO00IozBIBbuFq8Jnjc6S7O8GZEJKkKrETggXD6zClfcAIwxX3cFK3JjTnphAT1kvmOz/NjWRYrnUP7EVC14q95Hpwac/HukH0CjeCa0UxJDg6ecpFjZsCo2UBxerfOQPBvU+jaOvrE=
+  file: hello-world
+  on:
+    repo: Omar-Elrefaei/learning-CI
