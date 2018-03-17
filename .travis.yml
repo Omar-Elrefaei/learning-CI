@@ -3,6 +3,8 @@ os: linux
 group: stable
 dist: trusty
 script: gcc -o hello-world hello-world.cpp
+before_install:
+ - apt-get -y install inxi htop zsh libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev
 before_deploy:
  - git add *
  - git commit -m "binary"
