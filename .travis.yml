@@ -4,8 +4,8 @@ group: stable
 dist: trusty
 script: gcc -o hello-world hello-world.cpp
 before_deploy:
- - git add *
- - git commit -m "binary"
+# - git add *
+# - git commit -m "binary"
 deploy:
   provider: releases
   api_key:
